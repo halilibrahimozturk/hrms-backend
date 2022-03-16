@@ -1,7 +1,7 @@
 package com.halilibrahim.hrms.core.concretes;
 
 import com.halilibrahim.hrms.core.abstracts.MernisService;
-import com.halilibrahim.hrms.core.utilities.verifications.mernis.LIWKPSPublicSoap;
+import com.halilibrahim.hrms.core.utilities.verifications.mernis.JJVKPSPublicSoap;
 import com.halilibrahim.hrms.entities.concretes.JobSeeker;
 
 public class MernisManager implements MernisService {
@@ -11,7 +11,7 @@ public class MernisManager implements MernisService {
         System.out.println("Checking for Validity");
 
 
-        LIWKPSPublicSoap mernis = new LIWKPSPublicSoap();
+        JJVKPSPublicSoap mernis = new JJVKPSPublicSoap();
         try {
             if(mernis.TCKimlikNoDogrula(
                     jobSeeker.getIdentityNumber(),

@@ -5,7 +5,7 @@ import com.halilibrahim.hrms.core.abstracts.CloudinaryService;
 import com.halilibrahim.hrms.core.abstracts.MernisService;
 import com.halilibrahim.hrms.core.utilities.results.DataResult;
 import com.halilibrahim.hrms.core.utilities.results.Result;
-import com.halilibrahim.hrms.core.utilities.verifications.mernis.LIWKPSPublicSoap;
+import com.halilibrahim.hrms.core.utilities.verifications.mernis.JJVKPSPublicSoap;
 import com.halilibrahim.hrms.entities.concretes.Cv;
 import com.halilibrahim.hrms.entities.concretes.JobSeeker;
 import com.halilibrahim.hrms.entities.concretes.Verification;
