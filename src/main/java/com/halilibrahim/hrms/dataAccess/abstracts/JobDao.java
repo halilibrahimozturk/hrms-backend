@@ -9,6 +9,10 @@ import java.util.List;
 
 public interface JobDao extends JpaRepository<Job,Integer> {
 
+
+    Job getById(long id);
+
+
     List<Job> getByIsActive(boolean isActive);
     List<Job> getByIsActiveAndEmployer_Id(boolean isActive , long id);
 }

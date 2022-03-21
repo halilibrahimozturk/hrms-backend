@@ -9,4 +9,5 @@ import java.util.List;
 
 public interface CvService {
     DataResult<List<Cv>> getAll();
-    Result add(Cv cv);}
+    Result add(Cv cv);
+}

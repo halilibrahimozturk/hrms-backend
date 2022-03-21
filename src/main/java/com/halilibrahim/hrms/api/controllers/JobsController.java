@@ -50,4 +50,12 @@ public class JobsController {
         }
 
 
+
+
+    @GetMapping("/getById")
+    public DataResult<Job> getById(@RequestParam  long id){
+
+        return this.jobService.getById(id);
+    }
+
 }

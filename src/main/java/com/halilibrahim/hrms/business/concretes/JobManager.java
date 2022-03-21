@@ -38,7 +38,12 @@ public class JobManager implements JobService {
                 SuccessDataResult<List<Job>>
                 (this.jobDao.getByIsActive(isActive),"Data viewed");    }
 
-
+    @Override
+    public DataResult<Job> getById(long id) {
+        return new
+                SuccessDataResult<Job>
+                (this.jobDao.getById(id),"Data viewed");
+    }
 
 
 

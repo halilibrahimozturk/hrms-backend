@@ -15,4 +15,6 @@ public interface JobService {
 
     DataResult <List<Job>> getByIsActiveAndEmployer_Id(boolean isActive , long id);
 
+    DataResult <Job> getById(long id);
+
 }
